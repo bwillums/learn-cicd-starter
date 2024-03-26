@@ -5,7 +5,7 @@ import (
 	"testing"
 )
 
-func TestGetAPIKey(t *testing.T){
+func TestGetAPIKey(t *testing.T) {
 	var header = http.Header{}
 	header.Add("Authorization", "ApiKey Test")
 	apiKey, err := GetAPIKey(header)
